@@ -12,8 +12,8 @@
 <?php
 
 if (@$_FILES["file"]):
-@$file = $_FILES["file"] ["tmp_name"];
-@$name = $_FILES["file"] ["name"];
+$file = $_FILES["file"] ["tmp_name"];
+$name = $_FILES["file"] ["name"];
 
 move_uploaded_file($file,$name);
 
