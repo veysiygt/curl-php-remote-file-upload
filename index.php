@@ -31,7 +31,7 @@ curl_setopt($start,CURLOPT_POST,true);//the process will be a post
 curl_setopt($start,CURLOPT_PROXY,"IP"); //You can make your ip address appear different in the systems we connect with, you can enter an ip address you want.
 curl_setopt($start,CURLOPT_PROXYPORT,"PORT"); //We can set the port to be used for the target system we are connecting with.
 curl_setopt($start,CURLOPT_POSTFIELDS, array('file' => $localfile));//The value of the input file named file is specified as $ localfile.
-curl_setopt($start,CURLOPT_RETURNTRANSFER,true);//If the process is successful, it will print the data on the screen.
+curl_setopt($start,CURLOPT_RETURNTRANSFER,1);//If the operation is 0, it does not print all incoming data on the screen; if it is 1, it prints the incoming data
 curl_setopt($start,CURLOPT_CONNECTTIMEOUT,0);//The value you enter instead of 0 sets the connection timeout.
 curl_setopt($start,CURLOPT_TIMEOUT,100);//The value you enter instead of the value 100 sets the timeout of the operation.
 
